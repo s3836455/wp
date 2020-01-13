@@ -1,0 +1,412 @@
+/******** Color & Border ********/
+
+/* Testing new repo name */
+
+html {
+  background-image: url('../img/orb-cres-bw.png'), url('../img/orb-step-bw.png'), url('../img/StoreyHall-cubeBW.jpg');
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-attachment: fixed, fixed, fixed;
+  background-position: left, right, center;
+  background-size: 17vw, 17vw, cover;
+}
+
+header,
+footer,
+main > article > section.key header,
+main > article > section.title header {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+main > article > section header {
+  text-shadow: 1px 1px 2px rgba(127,127,127,0.5);
+}
+
+
+footer a:link, footer a:visited,
+footer a:hover, footer a:active {
+  color:#FFC8C5;
+  text-shadow: 0px 0px 1px #F00;
+}
+footer a:hover, footer a:active {
+  color:#FFF;
+}
+footer img {
+    box-shadow:0px 0px 2px #FFC8C5;
+}
+
+body > header img {
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.9));
+  -webkit-filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.9));
+}
+
+main > article > section header {
+  background-color: rgba(200, 200, 200, 0.95);
+  color: black;
+}
+
+main > article > section > section {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: black;
+}
+
+nav {
+  background: repeating-radial-gradient(circle at top, #FFF, #FFF 25px, #DFDFDF 30px);
+  border-bottom: 1px solid #CCC;
+}
+
+nav > span {
+  background-color: rgba(0, 0, 0, 0.1);
+  height:200px;
+}
+
+nav > div:first-child span:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+nav > span {
+  border-radius: 5px;
+}
+
+#search:invalid
+{
+  background-color: #fcc;
+}
+
+#zoom:invalid {
+  background-image: url('../img/card-back-grey.png');
+}
+
+main > article > section {
+  border: ridge 4px rgba(200, 200, 200, 0.7);
+}
+
+main > article > section blockquote {
+  border: groove 4px #880000;
+}
+
+main > article > section table {
+  border: 2px rgba(200, 200, 200, 0.7) solid;
+}
+
+main > article > section table tr {
+  border: 1px #CCC solid;
+}
+
+main > article > section th {
+  background-color: rgba(200, 200, 200, 0.7);
+}
+
+main > article > section tr:nth-child(even) td {
+  background-color: hsla(180, 100%, 95%, 0.25);
+}
+
+main > article > section tr:nth-child(odd) td {
+  background-color: hsla(60, 100%, 95%, 0.25);
+}
+
+main article section section {
+  padding-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-shadow: 1px 1px 2px rgba(127, 127, 127, 0.5);
+}
+
+/* repurposing the <em> tag for underlined text
+   Justification: underlining is more like emphasing whereas italics is more like an alternative voice */
+
+em {
+  text-decoration: underline;
+  font-style: normal;
+}
+
+/* Code,kbd and nested code,kbd styles */
+
+code {
+  color:#22C;
+  background-color: rgba(255,255,229,0.25);
+  border: 1px #CCC solid;
+}
+
+kbd {
+  color:hsl(90, 100%, 85%);
+  background-color: rgb(0,0,0);
+}
+
+pre kbd {
+  border: 3px inset #EEB;
+}
+
+kbd span {
+  color:#DDC;
+}
+
+code span {
+  color:#B00;
+}
+
+.p {
+  color:#80D;
+}
+code span span {
+  color:#060;
+}
+
+code span span span {
+  color:#A40;
+}
+
+.ob {
+  border: thin orange dotted;
+  box-sizing: border-box;
+}
+
+
+/* Color of each module slides: lecture, tutorial, labs and assignments 
+   Revision 20180413 - styling HTML, CSS, JS and PHP differently and inline with logos */
+
+article[id^="slides-lecture"] section header {
+  background:repeating-linear-gradient(left,
+    hsl(19, 100%, 70%), hsl(19, 100%, 70%) 5%,
+    hsl(222, 100%, 90%) 5%, hsl(222, 100%, 90%) 10%,
+    hsl(60, 100%, 50%) 10%, hsl(60, 100%, 50%) 15%,
+    hsl(300, 100%, 80%) 15%, hsl(300, 100%, 80%) 20%
+  );
+  background:-webkit-repeating-linear-gradient(left,
+    hsl(19, 100%, 70%), hsl(19, 100%, 70%) 5%,
+    hsl(222, 100%, 90%) 2.5%, hsl(222, 100%, 90%) 10%,
+    hsl(60, 100%, 50%) 10%, hsl(60, 100%, 50%) 15%,
+    hsl(300, 100%, 80%) 15%, hsl(300, 100%, 80%) 20%
+  );
+}
+
+article[id^="slides-lecture"] section.key header,
+article[id^="slides-lecture"] section.title header {
+  background: repeating-linear-gradient(left,
+    hsl(19, 100%, 30%), hsl(19, 100%, 30%) 5%,
+    hsl(222, 100%, 40%) 5%, hsl(222, 100%, 40%) 10%,
+    hsl(60, 100%, 35%) 10%, hsl(60, 100%, 35%) 15%,
+    hsl(300, 100%, 40%) 15%, hsl(300, 100%, 40%) 20%
+  );
+  background:-webkit-repeating-linear-gradient(left,
+    hsl(19, 100%, 30%), hsl(19, 100%, 30%) 5%,
+    hsl(222, 100%, 40%) 5%, hsl(222, 100%, 40%) 10%,
+    hsl(60, 100%, 35%) 10%, hsl(60, 100%, 35%) 15%,
+    hsl(300, 100%, 40%) 15%, hsl(300, 100%, 40%) 20%
+  );
+}
+
+article[id^="slides-lecture"] section header span {
+  color:#000;
+}
+article[id^="slides-lecture"] section.key header span,
+article[id^="slides-lecture"] section.title header span {
+  color:#fff;
+}
+
+article section.title section {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+article section.title section p {
+  font-family: Museo-500, cursive;
+  color: white;
+  font-size: 250%;
+}
+
+/* HTML Slides */
+
+article[id^="slides-lecture"].html section header {
+  background: linear-gradient(left,
+    hsl(19, 100%, 70%), hsl(19, 100%, 70%) 60%,
+    hsla(19, 100%, 70%, 0.7) 100%
+  );
+  background:-webkit-linear-gradient(left,
+    hsl(19, 100%, 70%), hsl(19, 100%, 70%) 60%,
+    hsla(19, 100%, 70%, 0.7) 100%
+  );
+}
+
+article[id^="slides-lecture"].html section.key header,
+article[id^="slides-lecture"].html section.title header {
+  background: linear-gradient(left,
+    hsl(19, 100%, 30%), hsl(19, 100%, 30%) 60%,
+    hsla(19, 100%, 30%, 0.7) 100%
+  );
+  background:-webkit-linear-gradient(left,
+    hsl(19, 100%, 30%), hsl(19, 100%, 30%) 60%,
+    hsla(19, 100%, 30%, 0.7) 100%
+  );
+}
+
+/* CSS Slides */
+
+article[id^="slides-lecture"].css section header {
+  background: linear-gradient(left,
+    hsl(222, 100%, 90%), hsl(222, 100%, 90%) 60%,
+    hsla(222, 100%, 90%, 0.7) 100%
+  );
+  background:-webkit-linear-gradient(left,
+    hsl(222, 100%, 90%), hsl(222, 100%, 90%) 60%,
+    hsla(222, 100%, 90%, 0.7) 100%
+  );
+}
+
+article[id^="slides-lecture"].css section.key header,
+article[id^="slides-lecture"].css section.title header {
+  background: linear-gradient(left,
+    hsl(222, 100%, 40%), hsl(222, 100%, 40%) 60%,
+    hsla(222, 100%, 40%, 0.8) 100%
+  );
+  background:-webkit-linear-gradient(left,
+    hsl(222, 100%, 40%), hsl(222, 100%, 40%) 60%,
+    hsla(222, 100%, 40%, 0.7) 100%
+  );
+}
+
+/* JS Slides */
+
+article[id^="slides-lecture"].js section header {
+  background: linear-gradient(left,
+    hsl(60, 100%, 50%), hsl(60, 100%, 50%) 60%,
+    hsla(60, 100%, 50%, 0.7) 100%
+  );
+  background:-webkit-linear-gradient(left,
+    hsl(60, 100%, 50%), hsl(60, 100%, 50%) 60%,
+    hsla(60, 100%, 50%, 0.7) 100%
+  );
+}
+
+article[id^="slides-lecture"].js section.key header,
+article[id^="slides-lecture"].js section.title header {
+  background: linear-gradient(left,
+    hsl(60, 100%, 35%), hsl(60, 100%, 35%) 60%,
+    hsla(60, 100%, 35%, 0.7) 100%
+  );
+  background:-webkit-linear-gradient(left,
+    hsl(60, 100%, 35%), hsl(60, 100%, 35%) 60%,
+    hsla(60, 100%, 35%, 0.7) 100%
+  );
+}
+
+/* PHP Slides */
+
+article[id^="slides-lecture"].php section header {
+  background: linear-gradient(left,
+    hsl(300, 100%, 80%), hsl(300, 100%, 80%) 60%,
+    hsla(300, 100%, 80%, 0.7) 100%
+  );
+  background:-webkit-linear-gradient(left,
+    hsl(300, 100%, 80%), hsl(300, 100%, 80%) 60%,
+    hsla(300, 100%, 80%, 0.7) 100%
+  );
+}
+
+article[id^="slides-lecture"].php section.key header,
+article[id^="slides-lecture"].php section.title header {
+  background: linear-gradient(left,
+    hsl(300, 100%, 40%), hsl(300, 100%, 40%) 60%,
+    hsla(300, 100%, 40%, 0.7) 100%
+  );
+  background:-webkit-linear-gradient(left,
+    hsl(300, 100%, 40%), hsl(300, 100%, 40%) 60%,
+    hsla(300, 100%, 40%, 0.7) 100%
+  );
+}
+
+.trev-tryit textarea {
+  color:hsl(90, 100%, 85%);
+  background-color: #000;
+  border:4px inset hsl(120, 50%, 32%);
+  text-shadow: 1px 1px 1px hsla(120, 100%, 50%, 0.5);
+}
+
+
+/* End Block */
+
+.g,
+main a:link,
+main a:visited {
+  color: #060;
+}
+
+main a:hover,
+main a:active {
+  color: #090;
+}
+
+
+.r {
+  color:#900;
+}
+
+.bl {
+  color: blue;
+}
+
+.sb {
+  color: saddlebrown;
+}
+
+.w {
+  color:white;
+}
+
+.x, del {
+  text-decoration: line-through;
+}
+
+.u {
+  text-decoration: underline;
+}
+
+.pd {
+  padding:20px;
+  display:inline-block;
+  background-color: rgba(0,100,0,0.2);
+}
+
+.error {
+  color:#900;
+  margin-left:0.5em;
+}
+
+main section > p > img,
+.bs {
+  box-shadow: 0px 0px 2px #999;
+}
+
+div.modal-block {
+  border: ridge 2px #999;
+  background: #eee;
+  border-radius: 5px;
+  padding: 0.5em;
+}
+
+#overlayContent div:last-child {
+  border-top: thin #666 solid;
+}
+
+canvas {
+  box-shadow: 0px 0px 2px #840;
+}
+
+input[pattern]:invalid {
+  border: 2px red solid;
+  background-color:#faa;
+}
+
+figure {
+  padding:5px
+}
+figcaption {
+  font-size: 80%;
+}
