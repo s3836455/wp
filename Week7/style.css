@@ -1,0 +1,5 @@
+input[pattern]:invalid {
+    border: 2px red solid;
+    background-color: #fee;
+}
+
